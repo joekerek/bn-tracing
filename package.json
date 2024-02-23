@@ -1,5 +1,5 @@
 {
-  "name": "bn-trace",
+  "name": "bn-tracing",
   "version": "0.0.1",
   "description": "Tracing with Opentelemetry and Google Trace Exporter",
   "main": "index.js",

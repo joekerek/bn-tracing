@@ -38,3 +38,5 @@ config/_revision
 # .tfstate files
 *.tfstate
 *.tfstate.*
+
+index.cjs

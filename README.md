@@ -1,10 +1,10 @@
-# bn-trace
+# bn-tracing
  Tracing with Opentelemetry and Google Trace Exporter
 
 # Usage
 Install the npm-package and import it before express is required.
 
-`require(@bonniernews/bn-trace)(options)` 
+`require(bn-tracing)(options)` 
 
 # Options
 ```
