@@ -13,7 +13,7 @@ import { detectResourcesSync } from "@opentelemetry/resources";
 import { gcpDetector } from "@opentelemetry/resource-detector-gcp";
 
 let providerRegistered = false;
-export default ({ serviceName = "default", debug = false }) => {
+export default ({ serviceName = "default", debug = false, instrumentations = [] }) => {
   if (providerRegistered) {
     return trace.getTracer(serviceName);
   }
@@ -58,6 +58,7 @@ export default ({ serviceName = "default", debug = false }) => {
           span.setAttribute("service.name", serviceName);
         },
       }),
+      ...instrumentations
     ],
   });
 
