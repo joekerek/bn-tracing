@@ -11,7 +11,7 @@ Install the npm-package and import it before express is required.
 {
   serviceName: String (Default: default)
   debug: Bool (default: false)
-  instrumentations: Array (Default: [])
+  instrumentations:fsa Array (Default: [])
 }
 ```
 
